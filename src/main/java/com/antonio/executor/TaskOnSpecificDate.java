@@ -26,7 +26,5 @@ public class TaskOnSpecificDate {
             System.out.println("Task executed at " + datetime + " in thread: " + Thread.currentThread().getName());
             scheduledExecutorService.shutdown(); // Closes the executor service to prevent new tasks from being submitted
         }, delay, TimeUnit.MILLISECONDS);
-
-
     }
 }
